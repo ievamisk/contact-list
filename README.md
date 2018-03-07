@@ -5,7 +5,7 @@ This design was created from given design template, it is contact list design in
 * see dropdown when clicked on profile panel (top right corner)
 
 ## INFORMATION
-Created using HTML, CSS, JS and Angular4
+* Created using HTML, CSS, JS and Angular4
 * Not responsive! 
 * Tested on Chrome Version 64.0.3282.119 only
 
