@@ -1,0 +1,6 @@
+<div class="main-container">
+  <div class="main-container--wrapper">
+    <app-profile-card [displayedContact]="selected"></app-profile-card>
+    <app-contacts (selectedContact)="selectingContact($event)"></app-contacts>
+  </div>
+</div>

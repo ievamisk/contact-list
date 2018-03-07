@@ -1,0 +1,30 @@
+<div class="profile">
+    <div class="profile--photo" *ngIf="displayedContact">
+        <img src="/assets/images/userpic.jpg">
+    </div>
+    <div class="profile--info" *ngIf="displayedContact">
+        <ul class="profile--info-list">
+            <li class="profile--info-list-item">
+                <span class="profile--info-list-item-header">Name:</span>
+                <span class="profile--info-list-item-details">{{ displayedContact.name }}</span>
+            </li>
+            <li class="profile--info-list-item">
+                <span class="profile--info-list-item-header">Surname:</span>
+                <span class="profile--info-list-item-details">{{ displayedContact.surname }}</span>
+            </li>
+            <li class="profile--info-list-item">
+                <span class="profile--info-list-item-header">City:</span>
+                <span class="profile--info-list-item-details">{{ displayedContact.city }}</span>
+            </li>
+            <li class="profile--info-list-item">
+                <span class="profile--info-list-item-header">Email:</span>
+                <a href="" class="profile--info-list-item-details-email">{{ displayedContact.email }}</a>
+            </li>
+            <li class="profile--info-list-item">
+                <span class="profile--info-list-item-header">Phone:</span>
+                <span class="profile--info-list-item-details">{{ displayedContact.phone }}</span>
+            </li>
+        </ul>
+
+    </div>
+</div>

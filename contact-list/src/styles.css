@@ -1,0 +1,11 @@
+html, body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: rgba(32,127,121,1);
+    background: linear-gradient(135deg, rgba(32,127,121,1) 0%, rgba(28,60,107,1) 100%);
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;;
+}

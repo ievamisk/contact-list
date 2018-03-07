@@ -1,0 +1,24 @@
+<div class="menu">
+    <div class="menu--wrapper">
+        <div class="menu--wrapper-logo">
+            <img src="/assets/images/contactifyLogo.jpg">
+        </div>
+        <div class="menu--wrapper-small-menu">
+            <button id="right" class="menu--wrapper-small-menu-button">DASHBOARD</button>
+            <button id="middle" class="menu--wrapper-small-menu-button-active">CONTACTS</button>
+            <button id="left" class="menu--wrapper-small-menu-button">NOTIFICATIONS</button>
+        </div>
+        <div class="menu--wrapper-search">
+            <input type="text" class="menu--wrapper-search-input" placeholder="Search">
+            <button type="submit" class="menu--wrapper-search-button"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </div>
+        <div class="menu--wrapper-profile" (click)="toggleActivity()">
+            <div class="menu--wrapper-profile-name">
+                <i class="fa fa-user menu--wrapper-profile-icon" aria-hidden="true"></i>
+                <span>Jorah Marmont</span>
+            </div>
+            <i class="fa fa-caret-down menu--wrapper-profile-drop" aria-hidden="true"></i>
+            <app-dropdown class="menu--wrapper-profile-dropdown" [ngClass]="displayMenu ? '' : 'menu--wrapper-profile-dropdown---hidden'"></app-dropdown>
+        </div>
+    </div>
+</div>

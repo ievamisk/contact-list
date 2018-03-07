@@ -1,0 +1,133 @@
+.contacts {
+  margin-left: 15px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  height: 400px;
+  //max-height: 400px;
+  width: 948px;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  //box-shadow: -7px 10px 1px -7px rgba(0, 0, 0, 0.1);
+  box-shadow: -2px 5px 1px rgba(0, 0, 0, 0.07);
+  &--list {
+    width: 100%;
+    border-collapse: collapse;
+
+    &-header {
+      position: relative;
+      width: 100%;
+      & th {
+        position: relative;
+        font-size: 14px;
+        text-align: left;
+        height: 50px;
+        border-left: 1px solid #03809c;
+        box-shadow: inset 1px 0 #2cc6e0;
+        &:first-child, &:nth-child(2){
+          border: none;
+          box-shadow: none;
+        }
+      }
+      &-active {
+        background-color: #0186a5;
+        border-top-left-radius: 10px;
+      }
+      &-name {
+        text-align: left;
+        background-color: #0186a5;
+        color: #ffffff;
+        cursor: pointer;
+
+
+        &-icon {
+          padding-top: 3px;
+          padding-right: 8px;
+          float: right;
+        }
+      }
+
+      &-surname {
+        background-color: #0390ae;
+        color: #ffffff;
+        padding-left: 20px !important;
+      }
+      &-city {
+        background-color: #0899b8;
+        color: #ffffff;
+        padding-left: 10px !important;
+      }
+      &-email {
+        background-color: #0eadcb;
+        color: #ffffff;
+        padding-left: 10px !important;
+      }
+      &-phone {
+        background-color: #11b6d4;
+        color: #ffffff;
+        text-align: right !important;
+        padding-right: 20px !important;
+      }
+      &-manage {
+        padding-left: 2%;
+        background-color: #15c0de;
+        color: #ffffff;
+        border-top-right-radius: 10px;
+      }
+    }
+    &-row{
+      font-weight: 400;
+      height: 44px;
+      color: #504d46;
+      border-bottom: 1px solid #eaeae8;
+
+
+      &-icon {
+        padding-left: 12px;
+      }
+      &-surname {
+        padding-left: 20px;
+      }
+      &-city {
+        padding-left: 10px;
+      }
+      &-email {
+        padding-left: 10px;
+      }
+      &-phone{
+        text-align: right;
+        padding-right: 20px;
+      }
+      &-manage {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+      }
+      &-button {
+        height: 25px;
+        width: 25px;
+        background-color: transparent;
+        color: #504d46;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 15px;
+        &:not(last-child) {
+          margin-right: 4px;
+        }
+      }
+      &:hover{
+        background-color: #e7f6f9;
+        transition: background-color 0.5s ease;
+        cursor: pointer;
+        & .contacts--list-row-button {
+          background-color: #0fb7d4;
+          color: #ffffff;
+          transition: background-color 0.5s ease
+        }
+      }
+
+    }
+  }
+}

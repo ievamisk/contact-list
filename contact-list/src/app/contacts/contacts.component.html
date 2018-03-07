@@ -1,0 +1,38 @@
+<div class="contacts">
+    <table class="contacts--list" cellpadding="0" cellspacing="0">
+        <thead>
+            <tr class="contacts--list-header">
+                <th class="contacts--list-header-active"></th>
+                <th class="contacts--list-header-name" (click)="sortByName()">
+                    Name
+                    <i class="fa contacts--list-header-name-icon" [ngClass]="(sort === 'asc') ? 'fa-arrow-up' : (sort === 'desc') ? 'fa-arrow-down' : 'fa-sort'" aria-hidden="true"></i>
+                </th>
+                <th class="contacts--list-header-surname">Surname</th>
+                <th class="contacts--list-header-city">City</th>
+                <th class="contacts--list-header-email">Email</th>
+                <th class="contacts--list-header-phone">Phone</th>
+                <th class="contacts--list-header-manage"></th>
+            </tr>
+        </thead>
+        <tbody *ngIf="contacts.length > 0" >
+            <tr class="contacts--list-row" *ngFor="let contact of contacts; let i = index" (click)="select(i)">
+                <td><i class="fa contacts--list-row-icon" [ngClass]="contact.active ? 'fa-eye' : 'fa-eye-slash'"  aria-hidden="true"></i></td>
+                <td class="contacts--list-row-name">{{contact.name}}</td>
+                <td class="contacts--list-row-surname">{{contact.surname}}</td>
+                <td class="contacts--list-row-city">{{contact.city}}</td>
+                <td class="contacts--list-row-email">{{contact.email}}</td>
+                <td class="contacts--list-row-phone">{{contact.phone}}</td>
+                <td class="contacts--list-row-manage">
+                    <button class="contacts--list-row-button"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                    <button class="contacts--list-row-button"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                </td>
+            </tr>
+        </tbody>
+        <tr class="contacts--list-row" *ngIf="contacts.length == 0">
+            Oops. There are no contacts here!
+        </tr>
+
+    </table>
+
+
+</div>

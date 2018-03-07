@@ -1,0 +1,35 @@
+<div class="management-menu">
+    <div class="management-menu--wrapper">
+        <div class="management-menu--filter">
+            <div class="management-menu--filter-name-field">
+                <input [(ngModel)]="name" type="text" class="management-menu--filter-name-field-input" placeholder="Name">
+            </div>
+            <div class="management-menu--filter-city">
+                <select [(ngModel)]="selectedCity" class="management-menu--filter-city-select">
+                    <option value="" hidden>City</option>
+                    <option *ngFor="let city of cities" value="{{ city }}">{{ city }}</option>
+                </select>
+                <!--<i class="fa fa-caret-down management-menu&#45;&#45;filter-city-drop" aria-hidden="true"></i>-->
+
+            </div>
+            <div class="management-menu--filter-show-active">
+
+                <div class="management-menu--filter-show-active-checkbox" [ngClass]="isActive ? 'management-menu--filter-show-active-checkbox-checked' : ''" (click)="toggleActivity()">
+                    <i class="fa fa-check management-menu--filter-show-active-checkbox-icon" aria-hidden="true"></i>
+                </div>
+                <input type="checkbox" [(ngModel)]="isActive">
+
+            </div>
+            <label class="management-menu--filter-show-active-checkbox-label">Show active</label>
+            <button type="submit" class="management-menu--filter-button" (click)="filterItems()">FILTER</button>
+        </div>
+        <button class="management-menu--add" type="submit" >
+            <div class="management-menu--add-icon">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+            </div>
+
+            <p class="management-menu--add-text">ADD NEW CONTRACT</p>
+
+        </button>
+    </div>
+</div>
