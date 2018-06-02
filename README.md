@@ -13,3 +13,7 @@ This design was created from given design template, it is contact list design in
 * First go to contact-list directory `cd contact-list`
 * Run `npm install` to install Angular4
 * Run `ng serve -o` 
+
+## SCREENSHOTS
+![contact-list_dropdown](https://user-images.githubusercontent.com/17141606/40874677-f055766e-667a-11e8-931e-777f3903eb0c.PNG)
+![contact-list](https://user-images.githubusercontent.com/17141606/40874678-f07bfe74-667a-11e8-8001-c8e1533b5d79.PNG)
