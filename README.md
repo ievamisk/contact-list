@@ -10,7 +10,6 @@ This design was created from given design template, it is contact list design in
 * Tested on Chrome Version 64.0.3282.119 only
 
 ## LAUNCHING
-* First go to contact-list directory
-* Run npm install to install Angular4
-* Run ng serve 
-* In the browser go to localhost:4200
+* First go to contact-list directory `cd contact-list`
+* Run `npm install` to install Angular4
+* Run `ng serve -o` 
